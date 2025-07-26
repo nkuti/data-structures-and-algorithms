@@ -1,6 +1,8 @@
 /**
  * || PROBLEM #   : Two Sum ||
- * fastest time: 20 min
+ * dates attempted -- time:
+ *      1: July 24, 2025 -- 20min
+ *      2:
  * difficulty: easy
  *
  * Applicable pattern(s): Two Pointers

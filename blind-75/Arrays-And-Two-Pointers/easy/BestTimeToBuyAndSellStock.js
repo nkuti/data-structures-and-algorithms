@@ -1,6 +1,8 @@
 /**
  * || PROBLEM #   : Best Time To Buy And Sell Stock  ||
- * fastest time: About 1 hour
+ * dates attempted -- time:
+ *      1: July 25, 2025 -- About 1Hr
+ *      2:
  * difficulty: easy
  *
  * Applicable pattern(s): Sliding Window
@@ -54,6 +56,14 @@ const fn = (prices) => {
     return 0;
   }
 };
+
+/**
+ * ||*********************************************||
+ *                 ATTEMPT 2
+ * ||*********************************************||
+ * */
+
+const fn2 = () => {};
 
 // Examples
 console.log(fn([10, 1, 5, 6, 7, 1])); // should be 6 --

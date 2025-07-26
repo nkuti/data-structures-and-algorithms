@@ -1,6 +1,8 @@
 /**
  * || PROBLEM #   : CONTAINS DUPLICATE  ||
- * fastest time: 16 min
+ * dates attempted:
+ *      1: July 24, 2025 -- 16min
+ *      2:
  * difficulty: easy
  *
  * Applicable pattern(s): Two Pointer
@@ -50,14 +52,17 @@ const fn = (arrayOfIntegers) => {
   return duplicatesExist;
 };
 
-//Examples
-console.log(fn([1, 2, 3, 3]));
-console.log(fn([1, 2, 3, 4]));
-
-console.log(fn([1, 2, 3, 4, 4, 5, 6, 7]));
-
 /**
  * ||*********************************************||
  *                 ATTEMPT 2
  * ||*********************************************||
  * */
+
+const fn2 = () => {};
+
+//Examples
+
+console.log(fn([1, 2, 3, 3]));
+console.log(fn([1, 2, 3, 4]));
+
+console.log(fn([1, 2, 3, 4, 4, 5, 6, 7]));
