@@ -8,7 +8,7 @@
  * || NOTES ||
  *
  * Had to slow down and think about this one the first go around
- *
+ * Got it on the first try, ran it and got the expected outcomes at once
  *
  */
 
