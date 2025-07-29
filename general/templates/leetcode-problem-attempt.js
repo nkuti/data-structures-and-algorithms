@@ -1,5 +1,5 @@
 /**
- * || PROBLEM #   :  ||
+ * || PROBLEM :  ||
  * dates attempted -- time:
  *      1:
  *      2:
