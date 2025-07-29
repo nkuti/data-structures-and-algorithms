@@ -1,7 +1,7 @@
 /**
  * || PROBLEM : Product of Array Except Self ||
  * dates attempted -- time:
- *      1: Jul 28, 2025 --
+ *      1: Jul 28, 2025 -- LITERALLY ALL EVENING
  *      2:
  * difficulty: medium
  *
@@ -9,8 +9,9 @@
  *
  * || NOTES ||
  *
- *
- *
+ * This one humbled me. I couldn't understand why the prefix and suffix arrays needed
+ *  a 1 at the start/end, but now I understand it's because there was nothing to multiply
+ * on that side. Had to look up the solution for sure.
  *
  */
 
@@ -35,17 +36,7 @@
  * */
 
 const fn = (numsArray) => {
-  /**
-   *  Prefix has to start with 1
-   *  since there's nothing to the left to multiply
-   * so we want the elements on the right by themselves
-   */
   let leftSideProducts = [1];
-  /**
-   * Suffix has to end with 1,
-   * because there's nothing to the right to multiply
-   * so we want the elements on the left by themselves
-   */
   let rightSideProducts = [1];
   let finalArray = [];
 
@@ -58,7 +49,6 @@ const fn = (numsArray) => {
   }
 
   for (let i = numsArray.length - 2; i >= 0; i--) {
-    console.log("i =", i, numsArray[i + 1], rightProductSoFar);
     rightProductSoFar *= numsArray[i + 1];
     rightSideProducts.unshift(rightProductSoFar);
   }
@@ -67,7 +57,6 @@ const fn = (numsArray) => {
     finalArray.push(leftSideProducts[i] * rightSideProducts[i]);
   }
 
-  console.log(leftSideProducts, rightSideProducts);
   return finalArray;
 };
 
